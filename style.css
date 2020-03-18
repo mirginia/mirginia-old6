@@ -1,0 +1,93 @@
+body{
+	margin: auto 0;
+	/*background: url("docs/fondo.jpg") no-repeat;
+	background-size: cover;*/
+	background-color: #F9F9E3;
+}
+
+header{
+	width: 100%;
+	top:0;
+	align-content: center;
+	text-align: center;
+	margin: 0;
+}
+
+h1{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 5rem;
+}
+
+h3{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 2rem;
+}
+
+
+
+/*GRID*/
+
+.container{
+	margin:50px;
+	display: grid;
+	grid-gap:20px;
+	grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+}
+
+
+.zona{
+	background-color: #027478;
+	color: white;
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	transition: all 0.5s linear;
+	padding:30px;
+	margin:20px;
+	border-radius: 30px;
+}
+
+.zona:hover{
+	box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+}
+
+.rose{
+	cursor:pointer;
+}
+
+.zona>img{
+	width: 100%;
+}
+
+.final{
+	margin:20px 70px;
+	height: 100px;
+	padding:30px;
+}
+
+.final>img{
+	height: 100%;
+	width: auto;
+}
+
+footer{
+	font-family: arial;
+	font-size: 0.7rem;
+	text-align: center;
+	margin:5px;
+}
+
+footer>img{
+	margin-top:20px;
+	display: inline-block;
+}
+
+/*Screen smaller than 650px*/
+@media only screen and (max-width: 650px){
+	h1{
+		font-size:3rem;
+	}
+	h3{
+		font-size:1rem;
+	}
+}
+
