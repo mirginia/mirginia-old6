@@ -1,7 +1,5 @@
 body{
 	margin: auto 0;
-	/*background: url("docs/fondo.jpg") no-repeat;
-	background-size: cover;*/
 	background-color: #F9F9E3;
 }
 
@@ -28,10 +26,19 @@ h3{
 /*GRID*/
 
 .container{
+
 	margin:50px;
-	display: grid;
-	grid-gap:20px;
-	grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+
+	display: -ms-grid;
+		display: grid;
+	-ms-grid-gap:20px;
+		grid-gap:20px;
+	-ms-grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+		grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+		
+
+	-ms-justify-items: center;
+		justify-items: center;
 }
 
 
@@ -41,13 +48,31 @@ h3{
 	text-align: center;
 	font-family: 'Gloria Hallelujah', cursive;
 	transition: all 0.5s linear;
-	padding:30px;
+	padding:15px;
 	margin:20px;
 	border-radius: 30px;
+	-ms-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+		box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+
+	display: -ms-flex;
+		display: flex;
+	-ms-justify-content: center;
+		justify-content: center;
+	-ms-align-items: center;
+		align-items: center;
+}
+
+.size{
+	/*height: 50%;*/
+	/*width: 7vw;*/
+	/*width: 8vw;*/
 }
 
 .zona:hover{
-	box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+	-ms-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.8);
+		box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.8);
 }
 
 .rose{
@@ -55,7 +80,7 @@ h3{
 }
 
 .zona>img{
-	width: 100%;
+	width: 90%;
 }
 
 .final{
@@ -68,6 +93,42 @@ h3{
 	height: 100%;
 	width: auto;
 }
+
+/*2 REGALO*/
+
+.flowersgrid2{
+	padding:0px;
+	margin: 0px;
+
+	width: 100%;
+	height: 100%;
+
+	min-height: inherit;	
+
+	-ms-display: grid;
+		display: grid;
+	-ms-grid-template-columns: 55% 55%;
+		grid-template-columns: 55% 55%;
+	-ms-align-items: center;
+		align-items: center;
+	-ms-justify-content: center;
+		justify-content: center;
+	-ms-grid-gap:0px;
+		grid-gap:0px;
+
+}
+
+.flowers2{
+	width: 100%;
+}
+
+.no-active{
+	display:-moz-none;
+	display:-ms-none;
+		display:none;
+}
+
+/*FOOTER*/
 
 footer{
 	font-family: arial;
@@ -88,6 +149,10 @@ footer>img{
 	}
 	h3{
 		font-size:1rem;
+	}
+
+	.size{
+		height: 220px;
 	}
 }
 
