@@ -1,9 +1,9 @@
-var m1 = document.getElementById("m1");
-var flower1 = document.getElementById("flowers-1");
+const m1 = document.getElementById("m1");
+const m2 = document.getElementById("m2");
+const m3 = document.getElementById("m3");
+const flower1 = document.getElementById("flowers-1");
 
 
-m1.addEventListener("click",changeimg1);
-m2.addEventListener("click",changeimg2);
 
 function changeimg1(){
 	if(flower1.getAttribute("src")==="docs/flor.png"){
@@ -14,12 +14,13 @@ function changeimg1(){
 	}
 }
 
+
 function changeimg2(){
 	var flowers=document.getElementsByClassName("flowersgrid2")[0];
 	var gift2 = document.getElementById("gift2");
 
-	console.log(gift2.classList.toggle("no-active"));
-	console.log(flowers.classList.toggle("no-active"));
+	gift2.classList.toggle("no-active");
+	flowers.classList.toggle("no-active");
 
 	//Si NO está activo el regalo: activar el regalo y desactivar flores.
 
@@ -37,3 +38,36 @@ function changeimg2(){
 		flowers[i].classList.remove("no-active");
 	}
 }
+
+const changeimg3=()=>{
+	const flowers=document.getElementsByClassName("flowersgrid3")[0];
+	const gift3 = document.getElementById("gift3");
+
+	changeimg(flowers,gift3);
+}
+
+const changeimg=(flowers,gift)=>{
+	gift.classList.toggle("no-active");
+	flowers.classList.toggle("no-active");
+
+	//Si NO está activo el regalo: activar el regalo y desactivar flores.
+
+	if(gift.classList.toggle("no-active")){
+
+		gift.classList.remove("no-active");
+		flowers.classList.add("no-active");
+	}
+
+	//Si SÍ está activo el regalo: desactivar el regalo y activar flores.
+
+	else if(!gift.classList.toggle("no-active")){
+
+		gift.classList.add("no-active");
+		flowers[i].classList.remove("no-active");
+	}
+}
+
+m1.addEventListener("click",changeimg1);
+m2.addEventListener("click",changeimg2);
+m3.addEventListener("click",changeimg3);
+
