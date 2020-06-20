@@ -133,6 +133,17 @@ h3{
 	width: 40%;
 }
 
+.flowersgrid4{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.flowers4{
+	width: 40%;
+}
+
 .no-active{
 	display:-moz-none;
 	display:-ms-none;
