@@ -144,6 +144,17 @@ h3{
 	width: 40%;
 }
 
+.flowersgrid5{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.flowers5{
+	max-width: 30%;
+}
+
 .no-active{
 	display:-moz-none;
 	display:-ms-none;

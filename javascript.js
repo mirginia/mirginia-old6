@@ -53,6 +53,13 @@ const changeimg4=()=>{
 	changeimg(flowers,gift4);
 }
 
+const changeimg5=()=>{
+	const flowers=document.getElementsByClassName("flowersgrid5")[0];
+	const gift5 = document.getElementById("gift5");
+
+	changeimg(flowers,gift5);
+}
+
 const changeimg=(flowers,gift)=>{
 	gift.classList.toggle("no-active");
 	flowers.classList.toggle("no-active");
@@ -78,4 +85,5 @@ m1.addEventListener("click",changeimg1);
 m2.addEventListener("click",changeimg2);
 m3.addEventListener("click",changeimg3);
 m4.addEventListener("click",changeimg4);
+m5.addEventListener("click",changeimg5);
 
