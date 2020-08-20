@@ -144,14 +144,14 @@ h3{
 	width: 40%;
 }
 
-.flowersgrid5{
+.flowersgrid5, .flowersgrid6{
 	display:flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-.flowers5{
+.flowers5, .flowers6{
 	max-width: 30%;
 }
 
